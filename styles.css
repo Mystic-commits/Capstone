@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cool {
+    text-align: center;
+    padding: 120px;
+}
+.cool h2{
+    margin-bottom:10px ;
+}
+.cool p{
+    margin-bottom: 20px;
+}
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px;
+}
+
+.about2 {
+    width: 40%;
+}
+
+.about1 {
+    width: 55%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif; 
+}
+
+.hero {
+    margin-top: 80px;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Bebas Neue', sans-serif; 
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+h4 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    margin-right: 500px;
+    margin-left: 200px;
+}
+
+.hero-image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.project-card img {
+    width: 100%;
+    height: 240px;
+
+    border-radius: 4px;
+}
+
+.project-card h3 {
+    font-size: 16px;
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.services {
+    padding: 60px 20px;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-size: 30px;
+    margin-bottom: 40px;
+    max-width: 1160px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    text-align: left;
+}
+
+.service-card img {
+    width: 100%;
+    height: 240px;
+    border-radius: 1px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-card button {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+}
+
+.service-card button:hover {
+    background-color: #333;
+}
+
+.cool .explore-button {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1px;
+    width: 20%; 
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.cool .explore-button:hover {
+    background-color: #333;
+}
+
+.featured-project {
+    padding: 60px 20px;
+    max-width: 1160px;
+    margin: 0 auto;
+    background: #f8f8f8;
+}
+
+.featured-project h2 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.featured-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.featured-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.featured-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+footer {
+    padding: 20px 40px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer button {
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width:600px) {
+    .project-grid{
+        flex-direction: column;
+    }
+
+}
